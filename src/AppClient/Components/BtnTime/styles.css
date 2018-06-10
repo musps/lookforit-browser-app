@@ -1,0 +1,28 @@
+.btnTime {
+  border: 1px solid #cdcdcd;
+  padding: 5px;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+
+.btnTime > .icon {
+  width: 30px;
+  height: 39px;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 0 0 0 10px;
+}
+
+.btnTime > label {
+  font-size: 18px;
+  color: #2c2c2c;
+  padding: 0 10px;
+}
+
+.icon-stopwatch {
+  background-image: url('/assets/imgs/icons/stopwatch.png');
+}

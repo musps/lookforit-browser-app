@@ -1,0 +1,222 @@
+.sideBar {
+  background: #2C2C2C;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  color: white;
+  width: 350px;
+  min-width: 350px;
+  transition: 0.3s;
+  height: 100vh;
+  z-index: 1;
+}
+.sideBar.minify {
+  width: 100px;
+  min-width: 100px;
+}
+
+.sideBar > .content {
+  width: 100%;
+  height: 100%;
+  max-height: 100%;
+  background: #2C2C2C;
+  overflow-y: scroll;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+}
+
+/**
+  * Hide scroll bar.
+  */
+.sideBar > .content::-webkit-scrollbar { 
+  display: none; 
+}
+
+.sideBar > .navBarSideBar {
+  height: 56px;
+  min-height: 56px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.sideBar > .navBarSideBar > .btnTrigger {
+  background: #1F201C;
+  color: white;
+  float: right;
+  cursor: pointer;
+  border: 0;
+  height: 42px;
+  line-height: 42px;
+  padding: 0 13px;
+  margin: 0 13px 0 0;
+  font-size: 1rem;
+}
+
+/**
+  * MOBILE VERSION.
+  */
+@media screen and (max-width: 900px) {
+  .sideBar,
+  .sideBar.minify {
+    width: 100%;
+    max-width: 100%;
+    height: 56px;
+  }
+  .sideBar > .content {
+    display: none;
+  }
+
+  /** MENU OPEN IN MOBILE SIZE **/
+  .sideBar.minify > .content {
+    display: flex;
+    position: absolute;
+    width: 100%;
+    height: calc(100% - 56px);
+    max-height: calc(100% - 56px);
+    margin: 56px 0 0 0;
+  }
+}
+
+
+/**
+  * SIDE BAR CONTENT
+  */
+
+ul.itemListSideBar {
+  list-style: none;
+  padding: 0;
+  border: 0;
+  margin: 15px 20px;
+  flex-grow: 0;
+}
+ul.itemListSideBar.full {
+  flex-grow: 1;
+}
+
+ul.itemListSideBar > li.title {
+  font-size: 1.3rem;
+  padding: 10px 0;
+  display: block
+}
+ul.itemListSideBar > li.title.hide {
+  display: none;
+}
+
+ul.itemListSideBar > li.item a {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  padding: 5px 0;
+  color: white;
+  text-decoration: none;
+}
+
+ul.itemListSideBar > li.item a:hover {
+  text-decoration: underline;
+}
+
+ul.itemListSideBar > li.itemDivider {
+  width: 100%;
+  height: 2px;
+  background: #808080;
+  margin: 10px 0;
+}
+
+ul.itemListSideBar > li.item .icon {
+  width: 60px;
+  min-width: 60px;
+  height: 60px;
+  min-height: 60px;
+  border-radius: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #2C2C2C;
+  position: relative;
+}
+
+ul.itemListSideBar > li.item .icon.isSelected {
+  border: 2px solid white;
+}
+
+ul.itemListSideBar > li.item .label {
+  padding: 0 10px;
+  display: block;
+  cursor: pointer;
+}
+
+ul.itemListSideBar > li.item .userInfo {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  padding: 0 10px;
+}
+ul.itemListSideBar > li.item .userInfo  > .fullName {
+  color: #FFC500;
+}
+ul.itemListSideBar > li.item .userInfo  > .addr {
+}
+ul.itemListSideBar > li.item .userInfo  > .addrValue {
+  text-decoration: #808080 underline;
+}
+
+/**
+  * ON MENU MINIFY DESKTOP
+  */
+
+@media screen and (min-width: 901px) {
+  .sideBar.minify ul.itemListSideBar > li.item .label,
+  .sideBar.minify ul.itemListSideBar > li.title,
+  .sideBar.minify ul.itemListSideBar > li.item .userInfo {
+    display: none;
+  }
+}
+
+
+/**
+  *
+  */
+.itemLabelSelected {
+  background-color: white;
+  color: black;
+  padding: 10px 15px 10px 35px !important;
+  border-top-right-radius: 14px;
+  border-bottom-right-radius: 14px;
+  margin-left: -20px;
+}
+
+
+
+.icon-livraison {
+  background-image: url('/assets/imgs/icons/icon-livraison.png');
+}
+.icon-coursier {
+  background-image: url('/assets/imgs/icons/icon-coursier.png');
+}
+.icon-restaurant {
+  background-image: url('/assets/imgs/icons/icon-restaurant.png');
+}
+.icon-info {
+  background-image: url('/assets/imgs/icons/info.png');
+}
+.icon-calendrier {
+  background-image: url('/assets/imgs/icons/calendrier.png');
+}
+.icon-favori {
+  background-image: url('/assets/imgs/icons/favori.png');
+}
+.icon-off {
+  background-image: url('/assets/imgs/icons/off.png');
+}
+.icon-aide {
+  background-image: url('/assets/imgs/icons/aide.png');
+}
+
+
+
+
+
+
+

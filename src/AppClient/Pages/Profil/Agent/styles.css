@@ -1,0 +1,255 @@
+.profilAgentPage {
+  padding: 20px;
+}
+
+.box-section {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  margin: 20px;
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+
+.box-section > .bs-title {
+
+}
+.box-section > .bs-title > a {
+  font-size: 36px;
+  color: #2c2c2c;
+}
+x
+.box-section > .bs-title > h2 {
+  color: #847f7f;
+  font-size: 18px;
+}
+
+.box-section > .bs-content {
+
+}
+
+/**
+  *
+  */
+
+.contentCarteIdentite {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+}
+
+.contentCarteIdentite > .carteFace {
+  width: 50%;
+  background-color: white;
+  border-radius: 7px;
+  box-shadow: 1px 1px 4px rgba(85, 85, 85, 0.3);
+  margin: 20px;
+  height: 220px;
+  max-width: 440px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contentCarteIdentite > .carteFace > button {
+  border: 0;
+  background-color: transparent;
+  font-size: 36px;
+  color: #2c2c2c;
+  cursor: pointer;
+}
+
+.contentCarteIdentite > .carteFace:hover {
+  background-color: rgba(85, 85, 85, 0.3);
+}
+
+.btnMore {
+  font-size: 72px;
+  color: #2c2c2c;
+}
+
+.listTransportMode {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.ltm-item {
+  z-index: 1;
+  background-color: #ffffff;
+  width: 180px;
+  min-width: 180px;
+  height: 180px;
+  min-height: 180px;
+  box-shadow: 1px 1px 4px rgba(85, 85, 85, 0.3);
+}
+
+.ltm-item {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  position: relative;
+}
+
+.ltm-item.selected {
+  border: 2px solid #dddddd;
+}
+
+.ltm-item:hover {
+  background-color: #e6e6e6;
+}
+
+
+.ltm-item > .onClick {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.ltm-item > .icon {
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  width: 90px;
+  height: 90px;
+}
+
+.icon-velo {
+  background-image: url('/assets/imgs/icons/velo.png');
+}
+.icon-voiture {
+  background-image: url('/assets/imgs/icons/voiture.png');
+}
+.icon-pieds {
+  background-image: url('/assets/imgs/icons/pieds.png');
+}
+.icon-moto {
+  background-image: url('/assets/imgs/icons/moto.png');
+}
+.icon-camion {
+  background-image: url('/assets/imgs/icons/camion.png');
+}
+
+.ltm-item .name {
+  color: #2c2c2c;
+  font-size: 24px;
+}
+
+.ltm-item .speed {
+  color: #2c2c2c;
+  font-size: 12px;
+}
+
+
+/**
+  *
+  */
+
+
+.contentCharteAgent {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+}
+
+.contentCharteAgent > .openPdfCharte {
+  color: #2c2c2c;
+  font-size: 24px;
+  text-transform: uppercase;
+  background-color: transparent;
+  border: 0;
+  margin: 20px;
+  text-align: left;
+  display: inline-flex;
+}
+
+.contentCharteAgent > .openPdfCharte:hover {
+  text-decoration: underline;
+}
+
+.checkboxCharte {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  margin: 20px;
+}
+
+.checkboxCharte > input {
+}
+
+.checkboxCharte > label {
+  color: black;
+  font-size: 24px;
+}
+
+
+/**
+  *
+  */
+
+.btnSubmit {
+  box-shadow: 1px 1px 4px rgba(85, 85, 85, 0.3);
+  background-color: #2c2c2c;
+  font-size: 28px;
+  border-radius: 7px;
+  padding: 14px 62px;
+  color: white;
+  cursor: pointer;
+}
+
+.btnSubmit:hover {
+  text-decoration: underline;
+}
+
+.arrowRight {
+  background-image: url('/assets/imgs/icons/play-symbol.png');
+  width: 28px;
+  height: 28px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: block;
+  margin: 0 0 0 20px;
+}
+
+/**
+  *
+  */
+
+@media screen and (max-width: 900px) {
+
+  .contentCarteIdentite {
+    flex-direction: column;
+  }
+
+  .contentCarteIdentite > .carteFace {
+    width: calc(100% - 40px);
+    height: 180px;
+  }
+
+  .ltm-item {
+    width: 120px;
+    min-width: 120px;
+    height: 120px;
+    min-height: 120px;
+  }
+
+  .bs-title > h1 {
+    font-size: 26px;
+  }
+
+}
+
+
+

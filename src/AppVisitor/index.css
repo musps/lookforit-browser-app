@@ -1,0 +1,30 @@
+.containerAppVisitor {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+}
+
+.containerAppVisitor > .content {
+  margin-top: 56px; /* TOP BAR HEIGHT */
+  min-height: calc(100vh - 136px); /* TOP BAR + FOOTER HEIGHT */
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+}
+
+.pageContent900 {
+  width: 100%;
+  max-width: 900px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+h1.pageName {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+  font-size: 40px;
+  border-bottom: 1px solid black;
+}

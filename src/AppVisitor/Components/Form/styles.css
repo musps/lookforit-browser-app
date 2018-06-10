@@ -1,0 +1,67 @@
+.formCol {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/**
+  * FORM GROUP
+  */
+.formGroup {
+  margin: 0 0 20px 0;
+}
+
+.formGroup:last-child {
+  margin: 0 0 0 0;
+}
+
+.formGroup > label {
+  display: block;
+  margin: 7px;
+}
+
+.formGroup > input {
+  border: 1px solid #dbdbdb;
+}
+
+.formGroup > .subLabelFrm {
+  text-decoration: underline;
+  cursor: pointer;
+  margin: 0 7px 7px 7px;
+  font-size: 13px;
+}
+
+.formGroup > .inputForm {
+  width: 100%;
+  max-width: 500px;
+  height: 40px;
+  padding: 0 7px;
+  font-size: 16px;
+}
+
+.formGroup > .buttonForm {
+  cursor: pointer;
+  padding: 0 20px;
+  border: 1px solid #dbdbdb;
+  background-color: white;
+  color: #363636;
+  height: 40px;
+  font-size: 16px;
+}
+
+.formGroup > .inputErrorInfo {
+  display: block;
+  margin: 0 7px;
+}
+
+/** Error handler **/
+.formGroup.isError > * {
+  color: red;
+}
+
+.formGroup.isError > input {
+  border: 1px solid red;
+}

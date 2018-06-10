@@ -1,0 +1,19 @@
+.error {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.error > .code {
+  font-size: 40px;
+  letter-spacing: 7px;
+}
+
+.error > .codeMessage {
+  font-size: 28px;
+}
+
+.error > .description {
+  font-size: 20px;
+}

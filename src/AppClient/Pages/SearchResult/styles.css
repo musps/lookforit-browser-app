@@ -1,0 +1,187 @@
+.searchResultPage {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 20px 20px 20px;
+  position: relative;
+}
+
+.searchResultPage > .searchCriteria {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border-bottom: 2px solid #747474;
+  padding: 10px 0;
+}
+
+.searchResultPage > .searchCriteria > .label {
+  flex-grow: 1;
+  font-size: 36px;
+  color: #747474;
+  margin: 0;
+}
+
+.searchResultPage > .searchCriteria > .count {
+  font-size: 24px;
+  color: #747474;
+  margin: 0;
+}
+
+/**
+  * RESULT LIST
+  */
+
+.resultList {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  background-color: #fbfbfb;
+  margin: 10px 0;
+}
+
+.resultItem {
+  width: 25%;
+  padding: 20px;
+}
+
+.resultItem > .img {
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  border: 2px solid black;
+  width: 100%;
+  height: 180px;
+  cursor: pointer;
+}
+
+.resultItem > .desc {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+}
+
+.resultItem > .desc .firstTitle {
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+.resultItem >  .desc .subTitle {
+  font-size: 14px;
+}
+
+.descMore {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  padding: 10px 0 0 0;
+}
+
+.descMore > .price {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: flex-end;
+}
+
+.descMore > .price > .priceStartAt {
+  font-size: 14px;
+}
+
+.descMore > .price > .priceAmount {
+  font-size: 16px;
+  color: #dd960e;
+}
+
+.btnIconShop {
+  width: 45px;
+  height: 45px;
+  min-width: 45px;
+  min-height: 45px;
+  border: 2px solid black;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.productNotOK {
+  text-align: center;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.productNotOk > .titleNotOk {
+  font-size: 18px;
+  color: #2c2c2c;
+}
+
+.btnCreateCMDMore {
+  text-decoration: none;
+  color: white;
+  background-color: rgba(229, 158, 23, 0.8);
+  padding: 14px 21px;
+  font-size: 30px;
+  border-radius: 7px;
+  transition: 0.5;
+  cursor: pointer;
+  text-align: center;
+  display: block;
+}
+
+.btnCreateCMDMore:hover {
+  background-color: rgba(229, 158, 23, 1);
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 900px) {
+  .resultItem {
+    width: 50%;
+  }
+}
+
+.resultCategories {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  padding: 0;
+  overflow-x: scroll;
+}
+
+.resultCategories > .itemCat {
+  background-color: white;
+  border-radius: 7px;
+  padding: 9px 14px;
+  margin: 5px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.resultCategories > .itemCat > .iconCat {
+  background-color: #2c2c2c;
+  width: 28px;
+  height: 28px;
+}
+
+.resultCategories > .itemCat > label {
+  font-size: 16px;
+  margin: 0 0 0 10px;
+  color: #2c2c2c;
+}
+
+.resultCategories > .itemCat:hover {
+  background-color: #2c2c2c;
+}
+
+.resultCategories > .itemCat:hover > .iconCat {
+  background-color: white;
+}
+
+.resultCategories > .itemCat:hover > label {
+  color: white;
+}
+

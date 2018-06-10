@@ -1,0 +1,28 @@
+.divBtnLinkYellow {
+  margin: 20px 0;
+}
+
+.btnLinkYellow {
+  text-decoration: none;
+  color: white;
+  background-color: rgba(229, 158, 23, 0.8);
+  padding: 14px 21px;
+  font-size: 30px;
+  border-radius: 7px;
+  -webkit-transition: 0.5;
+  -o-transition: 0.5;
+  transition: 0.5;
+  cursor: pointer;
+  text-align: center;
+}
+
+.btnLinkYellow:hover {
+  background-color: rgba(229, 158, 23, 1);
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 900px) {
+  .btnLinkYellow {
+    display: block;
+  }
+}

@@ -1,0 +1,184 @@
+/**
+  * SearchBar
+  */
+
+.hp-c-searchBar {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  padding: 20px 40px;
+  align-items: center;
+}
+
+.hp-c-searchBar > .searchBarInput {
+  flex-grow: 1;
+  color: #262626;
+  font-size: 18px;
+  padding: 10px 20px;
+  border: 0;
+  height: 46px;
+  box-shadow: 1px 1px 4px rgba(85, 85, 85, 0.3);
+}
+
+.hp-c-searchBar > .icon {
+  margin: 0 0 0 20px;
+  width: 40px;
+  height: 40px;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.icon-calendar {
+  background-image: url('/assets/imgs/icons/calendar.png');
+}
+
+@media screen and (max-width: 900px) {
+  .hp-c-searchBar {
+    padding: 20px 10px !important;
+  }
+}
+
+/**
+  * HISTORY ITEM
+  */
+.historyItem {
+  background-color: #e6e6e6;
+  border-bottom: 1px solid #bdbdbd;
+  padding: 20px 15px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+
+.historyItem.isSelected {
+  background-color: white;
+}
+
+.itemContent {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+}
+
+.itemContent > h1 {
+  color: #2c2c2c;
+  font-size: 24px;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.itemContent > h1:hover {
+  text-decoration: underline;
+}
+
+.itemCategory {
+  margin: 0 5px 0 0;
+}
+
+.itemCategory > .icon {
+  width: 30px;
+  height: 30px;
+  background-color: black;
+}
+
+.itemImage > .image {
+  width: 60px;
+  height: 60px;
+  background-color: #f7de50;
+}
+
+.ht-content > .title {
+  color: #2c2c2c;
+  font-size: 30px;
+}
+
+.tt {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  margin: 0 5px;
+}
+
+.tt > .date {
+  font-size: 16px;
+  color: #2c2c2c;
+  flex-grow: 1;
+}
+
+.tt > .price {
+  font-size: 24px;
+  color: #2c2c2c;
+}
+
+.shop {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+
+.shop > .icon {
+  margin: 5px;
+  width: 22px;
+  height: 22px;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-image: url('/assets/imgs/icons/store.png');
+}
+
+.shop > .label {
+}
+
+.icon-replay {
+  background-image: url('/assets/imgs/icons/replay.png');
+}
+
+/**
+  * btn facture
+  */
+.btnFacture {
+  border-radius: 4px;
+  padding: 7px;
+  box-shadow: 1px 1px 4px rgba(85, 85, 85, 0.3);
+  border: 0;
+  background-color: #e6e6e6;
+  display: inline-flex;
+  align-items: center;
+}
+
+.btnFacture.white {
+  background-color: white !important;
+}
+
+.btnFacture > .icon {
+  width: 22px;
+  height: 22px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.btnFacture > .label {
+  color: #2c2c2c;
+  font-size: 14px;
+  padding: 0 7px;
+}
+
+.icon-receipt {
+  background-image: url('/assets/imgs/icons/receipt.png');
+}
+
+.icon-facture {
+  background-image: url('/assets/imgs/icons/facture.png');
+}
+
+.btnList {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding: 7px;
+}

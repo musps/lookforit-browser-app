@@ -1,0 +1,48 @@
+/**
+  * BIG PANEL
+  */ 
+.bigPanel {
+  display: flex;
+  flex-direction: row;
+  height: calc(100vh - 56px);
+}
+
+.bigPanel > .panel {
+  flex-grow: 1;
+}
+
+.panelBtn {
+  text-decoration: none;
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+.panelBtn > span {
+  border: 1px solid black;
+  padding: 14px;
+  border-radius: 4px;
+}
+
+.panelBtn:hover {
+  background-color: #ABB7B7;
+}
+
+.splitPanel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/**
+  * MOBILE VERSION
+  */
+@media screen and (max-width: 900px) {
+  .bigPanel {
+    flex-direction: column;
+  }
+}

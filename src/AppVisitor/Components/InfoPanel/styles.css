@@ -1,0 +1,83 @@
+/**
+  * INFO PANEL
+  */
+.infoPanel {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  width: 100%;
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+.infoPanel .subPanel {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+}
+
+.subPanel .panel.panelWithTitle {
+  text-align: center;
+}
+.subPanel .panel.panelWithTitle h1 {
+  font-size: 35px;
+}
+
+.subPanel .panel.panelWithCaption {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 10px 0;
+}
+
+.subPanel .panel.panelWithCaption .caption {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+  width: 100%;
+  max-width: 200px;
+  padding: 10px 20px;
+}
+
+.subPanel .panel.panelWithCaption .caption .icon {
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 150px;
+  height: 150px;
+}
+
+.subPanel .panel.panelWithCaption .caption .label {
+  color: #707070;
+  font-size: 18px;
+  text-align: center;
+  padding: 7px;
+}
+
+.subPanel .panel.panelWithBtn {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  padding: 20px 0;
+}
+
+.subPanel .panel.panelWithBtn a {
+  text-decoration: none;
+  display: block;
+  color: #707070;
+  font-size: 24px;
+  border: 2px solid #707070;
+  border-radius: 4px;
+  padding: 7px 14px;
+  margin: 7px 14px;
+}
+
+/**
+  * MOBILE VERSION
+  */
+@media screen and (max-width: 900px) {
+  .subPanel .panel.panelWithCaption .caption {
+    width: 50%;
+  }
+}

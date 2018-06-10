@@ -1,0 +1,268 @@
+.historyPageAgent {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/**
+  *
+  */
+
+.historyPageAgent > .hp-title > h1 {
+  font-size: 40px;
+  color: #2c2c2c;
+}
+
+.historyPageAgent > .hp-content {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+
+.historyPageAgent > .hp-content > .left {
+  width: 45%;
+}
+
+.historyPageAgent > .hp-content > .right {
+  width: 65%;
+}
+
+/**
+  *
+  */
+
+.hap-leftContent {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+}
+
+.hap-rightContent {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+}
+
+/**
+  *
+  */
+
+.agentMonthRecap {
+  align-self: flex-end;
+  width: 100%;
+  max-width: 550px;
+  background-color: white;
+  box-shadow: 1px 1px 4px rgba(85, 85, 85, 0.3);
+  margin: 0 0 30px 20px;
+  padding: 14px;
+}
+
+.agentMonthRecap > .selectedDate {
+
+}
+
+.agentMonthRecap > .selectedDate > h1 {
+  color: #2c2c2c;
+  font-size: 24px;
+  padding: 0 14px;
+  margin: 0;
+}
+
+.agentMonthRecap > .data {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+}
+
+.data > .data-item {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+}
+
+.data > .data-item > .di-title {
+  font-size: 16px;
+  color: #2c2c2c;
+  margin: 0;
+}
+
+.data > .data-item > .di-value {
+  font-size: 30px;
+  color: #000000;
+  padding: 7px 0;
+}
+.data > .data-item > .di-value.orange {
+  color: #e59e17;
+}
+
+.data > .data-item > .di-icon {
+  width: 28px;
+  height: 28px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.data > .data-item > .icon-agent {
+  width: 90px;
+  height: 90px;
+  border: 2px solid black;
+  border-radius: 50%;
+}
+
+.data > .data-item > .rating {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: flex-end;
+  margin: 7px 0;
+}
+
+.data > .data-item > .rating > .rating-icon {
+  width: 28px;
+  height: 28px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.data > .data-item > .rating > .rating-value {
+  padding: 0 7px;
+  color: #2c2c2c;
+  font-size: 18px;
+}
+
+.icon-credit-card-1 {
+  background-image: url('/assets/imgs/icons/credit-card-1.png');
+}
+.icon-credit-card-2 {
+  background-image: url('/assets/imgs/icons/credit-card-2.png');
+}
+.icon-courses {
+  background-image: url('/assets/imgs/icons/courses.png');
+}
+.icon-rating {
+  background-image: url('/assets/imgs/icons/icon-rating.png');
+}
+
+/**
+  * history list agent
+  */
+
+.historyListAgent {
+
+}
+
+.hla-historyItem {
+  background-color: #e6e6e6;
+  border-bottom: 1px solid #bdbdbd;
+  padding: 20px 15px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+
+.hla-historyItem.isSelected {
+  background-color: white;
+}
+
+.hla-historyItem > .left {
+  width: 65%;
+  position: relative;
+}
+
+.hla-historyItem > .right {
+  width: 35%;
+}
+
+
+.hla-historyItem > .left > .date {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  background-color: rgba(255,255,255, 0.6);
+  border-top-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  top: 0;
+  left: 0;
+  padding: 10px 14px;
+}
+
+.hla-historyItem > .left > .date > .day {
+  font-size: 16px;
+  color: #2c2c2c;
+}
+
+.hla-historyItem > .left > .date > .hour {
+  font-size: 16px;
+  color: #2c2c2c;
+}
+
+.hla-historyItem > .left > .map {
+  width: 100%;
+  height: 180px;
+  background-color: red;
+  border-radius: 4px;
+}
+
+.hla-info {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  padding: 0 0 0 20px;
+  height: 100%;
+}
+
+.hla-info > .icon {
+  width: 30px;
+  height: 30px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.course-price > label,
+.course-km > label,
+.course-gain > label {
+  color: #2c2c2c;
+  font-size: 16px;
+}
+.course-gain > label {
+  font-size: 20px;
+}
+
+.course-price {
+  padding: 10px 0;
+}
+.course-km {
+  padding: 10px 0;
+}
+
+.course-km {
+  flex-grow: 1;
+}
+
+.mini-icon-restaurant {
+  background-image: url('/assets/imgs/icons/mini-icon-restaurant.png');
+}
+
+.mini-icon-livraison {
+  background-image: url('/assets/imgs/icons/mini-icon-livraison.png');
+}
+
+.mini-icon-coursier {
+  background-image: url('/assets/imgs/icons/mini-icon-coursier.png');
+}
+
+
+
+
+
+
+

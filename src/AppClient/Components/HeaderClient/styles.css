@@ -1,0 +1,122 @@
+.headerClient {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+
+.headerClient > .searchBarContent {
+}
+
+.headerClient > .accountContent {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-end;
+  margin: 15px;
+}
+
+.position-NoActionYet {
+  flex-direction: column;
+}
+
+.orderFirst {
+  order: 1;
+}
+
+.orderSecond {
+  order: 2;
+}
+
+/**
+  * Tools.
+  */
+
+.iconWithHover {
+  width: 60px;
+  min-width: 60px;
+  height: 60px;
+  min-height: 60px;
+  position: relative;
+}
+
+.iconAccs {
+  width: 60px;
+  min-width: 60px;
+  height: 60px;
+  min-height: 60px;
+  border: 2px solid black;
+  background-color: white;
+  border-radius: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 30px;
+}
+
+.iconAccsMargin {
+  margin: 0 10px;
+}
+
+.onHoverContent {
+  position: absolute;
+  top: 70px;
+  right: 0;
+  width: 250px;
+  min-height: 100px;
+  height: auto;
+  display: none;
+  background-color: white;
+  box-shadow: 1px 1px 4px rgba(85, 85, 85, 0.3);
+  z-index: 90;
+}
+
+.onHoverContent.isOpen {
+  display: initial;
+}
+
+.onHoverContent:before {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid white;
+  top: -10px;
+  right: 17px;
+}
+
+/**
+  *
+  */
+.noProductInCat {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  background-color: #fbfbfb;
+}
+
+.noProductInCat > .message {
+  flex-grow: 1;
+  font-size: 24px;
+  text-align: center;
+  color: #2c2c2c;
+  margin: 14px 28px;
+}
+
+.noProductInCat > .messageMore {
+  background-color: #f3f3f3;
+  font-size: 18px;
+  text-align: center;
+  color: #2c2c2c;
+  padding: 12px;
+}
+
+.icon-actionOne {
+  background-image: url('/assets/imgs/icons/icon-profil-connect.png');
+  background-size: contain;
+}
+.icon-actionTwo {
+  background-image: url('/assets/imgs/icons/work-briefcase.png');
+}
+
+

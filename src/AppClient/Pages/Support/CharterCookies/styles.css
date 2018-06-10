@@ -1,0 +1,31 @@
+.supportPageCustom {
+  width: 100%;
+  max-width: 980px;
+  padding: 0 20px 20px 20px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+}
+
+.supportPageCustom > .sp-title {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.supportPageCustom > .sp-title > h1 {
+  margin: 0;
+  font-size: 40px;
+  color: #2c2c2c;
+}
+
+@media screen and (max-width: 900px) {
+
+  .supportPageCustom > .sp-title > h1 {
+    font-size: 28px;
+  }
+
+}

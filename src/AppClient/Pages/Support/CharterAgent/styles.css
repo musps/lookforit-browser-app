@@ -1,0 +1,64 @@
+.supportPageCustom {
+  width: 100%;
+  max-width: 980px;
+  padding: 0 20px 20px 20px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+}
+
+.supportPageCustom > .sp-title {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.supportPageCustom > .sp-title > h1 {
+  margin: 0;
+  font-size: 40px;
+  color: #2c2c2c;
+}
+
+.supportPageCustom > .sp-content {
+  border-left: 3px solid #2c2c2c;
+  margin: 5px 0px;
+  background-color: white;
+  box-shadow: 1px 1px 4px rgba(85, 85, 85, 0.3);
+}
+
+.supportPageCustom > .sp-content > p {
+  color: #2c2c2c;
+  font-size: 16px;
+  margin: 0;
+  padding: 14px;
+}
+
+h1.sectionTitle {
+  color: #2c2c2c;
+  font-size: 30px;
+  width: 96%; 
+  text-align: center; 
+  border-bottom: 1px solid #000; 
+  line-height: 0.1em;
+  margin: 20px auto;
+} 
+
+h1.sectionTitle > span { 
+  background:#fff; 
+  padding:0 10px; 
+}
+
+p.sectionContent {
+  padding: 20px !important;
+}
+
+@media screen and (max-width: 900px) {
+
+  .supportPageCustom > .sp-title > h1 {
+    font-size: 28px;
+  }
+
+}
